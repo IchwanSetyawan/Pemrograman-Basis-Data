@@ -1,0 +1,11 @@
+declare
+bil integer:=&1;
+begin
+if(bil mod 2=0)
+then
+	dbms_output.put_line(bil||'Bilangan genap');
+else
+	dbms_output.put_line(bil||'bilangan ganjil');
+end if;
+end;
+/

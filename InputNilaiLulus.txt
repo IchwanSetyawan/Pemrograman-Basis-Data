@@ -1,0 +1,17 @@
+declare
+nilai integer(2) :=&input;
+begin
+if (nilai <=50)
+then
+	dbms_output.put_line('GOBLOK! gitu aja gak lulus');
+elsif (nilai between 51 and 75)
+	then
+	dbms_output.put_line('Nilai anda cukup, anda lulus');
+elsif (nilai between 76 and 90)
+	then
+	dbms_output.put_line('Nilai anda bagus, anda lulus');
+else 
+	dbms_output.put_line('MANTUL GAK TUH');
+end if;
+end;
+/

@@ -1,0 +1,14 @@
+declare
+variabel number;
+status varchar2(16);
+begin
+	variabel :=&inputan;
+	if variabel>50 
+	then
+		status :='lulus';
+	else
+		status :='tidak lulus';
+	end if;
+	dbms_output.put_line(status);
+end;
+/

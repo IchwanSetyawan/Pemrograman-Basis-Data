@@ -1,0 +1,14 @@
+declare
+	grade char(1) :=upper('&grade');
+	appraisal varchar2(20);
+begin
+	appraisal :=
+		case grade
+			when 'A' then 'Excellent'
+			when 'B' then 'Very Good'
+			when 'C' then 'Good'
+			else 'No such grade'
+		end;
+dbms_output.put_line('grade: '|| grade||' appraisal '|| appraisal);
+end;
+/
