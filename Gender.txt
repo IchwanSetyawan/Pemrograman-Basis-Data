@@ -1,0 +1,23 @@
+declare
+gender varchar2(10):='&jenis_kelamin';
+tinggi number :=&tinggi;
+begin
+if (gender ='pria')
+	then
+	if(tinggi >=165)
+	then
+		dbms_output.put_line('Lulus');
+	else
+		dbms_output.put_line('Tidak Lulus');
+	end if;
+elsif(gender ='wanita')
+	then
+	if(tinggi >=160)
+	then
+		dbms_output.put_line('Lulus');
+	else
+		dbms_output.put_line('Tidak Lulus');
+	end if;
+end if;
+end;
+/

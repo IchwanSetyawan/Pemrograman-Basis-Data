@@ -1,0 +1,13 @@
+declare
+	no number:=0;
+	jumlah number :=0;
+begin
+		--program mencetak angka 1 s/d 5 dan jumlahnya
+	while no < 5 loop
+	no := no +1;
+	jumlah := jumlah+no;
+	dbms_output.put_line('Angka : '||no);
+end loop;
+	dbms_output.put_line('Jumlah semua nilai angka adalah : '||jumlah);
+end;
+/

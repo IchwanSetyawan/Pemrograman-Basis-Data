@@ -1,0 +1,19 @@
+declare
+gaji	employees.salary%type;
+begin
+select salary into gaji from employees where employee_id=100;
+if gaji < 5000
+	then
+	dbms_output.put_line('Grade A');
+elsif gaji > 5000
+	then
+	dbms_output.put_line('Grade B');
+elsif gaji between 5000 and 30000
+	then
+	dbms_output.put_line('Grade C');
+elsif gaji <5000
+	then
+	dbms_output.put_line('Grade D');
+end if;
+end;
+/

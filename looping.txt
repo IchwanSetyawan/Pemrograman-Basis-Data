@@ -1,0 +1,14 @@
+declare
+	bilangan number:=1;
+begin
+	--program mencetak bilangan 1 s/d 5
+loop
+	dbms_output.put_line('Bilangan= '||bilangan);
+bilangan :=bilangan +1;
+if bilangan = 6 then
+	--jika bilangan = 6, keluar dari blok looping
+		exit;
+	end if;
+	end loop;
+end;
+/

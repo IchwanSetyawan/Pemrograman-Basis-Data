@@ -1,0 +1,8 @@
+declare
+begin
+	--program bilangan 1 s/d 5
+for no in 1 .. 5 loop
+	dbms_output.put_line('Bilangan : '||no);
+	end loop;
+end;
+/
